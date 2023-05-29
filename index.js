@@ -46,16 +46,16 @@ if(process.env.NODE_ENV==='Production'){
 
 
 // Available Routes
-app.use('/api/auth', auth)
+app.use('/', auth)
 
-app.use('/api/product', product)
+app.use('/', product)
 
-app.use('/api/cart', cart)
+app.use('/', cart)
 
-app.use('/api/wishlist', wishlist)
+app.use('/', wishlist)
 
-app.use('/api/review', review)
-app.use('/api/admin', AdminRoute)
+app.use('/', review)
+app.use('/admin', AdminRoute)
 // payment route
 app.use('/api', paymentRoute)
 
